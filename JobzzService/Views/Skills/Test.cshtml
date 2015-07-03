@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+
+<div class="form-inline">
+    Id:
+    <input type="text" class="form-control" id="itemId" value="" />
+
+    <button id="btnGet" type="button" class="btn btn-primary btn-lg">Get</button>
+    <button id="btnGetItem" type="button" class="btn btn-primary btn-lg">Get Item</button>
+    <button id="btnAddItem" type="button" class="btn btn-primary btn-lg">Add Item</button>
+    <button id="btnEditItem" type="button" class="btn btn-primary btn-lg">Edit Item</button>
+    <button id="btnDeleteItem" type="button" class="btn btn-primary btn-lg">Delete Item</button>
+
+</div>
+
+@section scripts
+{
+    <script src="~/Scripts/Views/TestPage.js"></script>
+    <script>
+        TestPage.initialize();
+    </script>
+}
